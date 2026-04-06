@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWS Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__logo">TWS<span>.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav__cta">Hire Me</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero__bg-text">DEV</div>
+    <div class="hero__content">
+      <p class="hero__tag">Full Stack Developer</p>
+      <h1 class="hero__title">Building Digital <br /><em>Experiences</em></h1>
+      <p class="hero__sub">I craft fast, scalable, and beautiful web apps using modern technologies. From Django backends to Kubernetes deployments.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">See My Work</a>
+        <a href="#contact" class="btn btn--outline">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="blob"></div>
+      <div class="code-card">
+        <div class="code-card__dots">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+        </div>
+        <pre class="code-card__body"><span class="c-key">class</span> <span class="c-class">Developer</span>:
+  name <span class="c-op">=</span> <span class="c-str">"TWS"</span>
+  skills <span class="c-op">=</span> [
+    <span class="c-str">"Django"</span>,
+    <span class="c-str">"Kubernetes"</span>,
+    <span class="c-str">"React"</span>,
+    <span class="c-str">"PostgreSQL"</span>
+  ]
+  <span class="c-key">def</span> <span class="c-fn">build</span>(self):
+    <span class="c-key">return</span> <span class="c-str">"amazing things"</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2>Developer who loves clean code <em>&amp; elegant solutions</em></h2>
+          <p>I'm a full-stack developer passionate about building real-world applications — from scalable Django APIs to containerized Kubernetes deployments.</p>
+          <p>Currently exploring cloud-native architectures, DevOps practices, and modern frontend frameworks.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">10+</span>
+              <span class="stat__label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">3+</span>
+              <span class="stat__label">Years Coding</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">5+</span>
+              <span class="stat__label">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__img-wrap">
+          <div class="about__img-placeholder">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="18" fill="#a78bfa"/>
+              <ellipse cx="40" cy="70" rx="28" ry="16" fill="#a78bfa" opacity=".4"/>
+            </svg>
+            <span>Your Photo Here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">Tech Stack</div>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">🐍</div>
+          <h3>Python / Django</h3>
+          <p>REST APIs, ORM, authentication, background tasks</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">☸️</div>
+          <h3>Kubernetes</h3>
+          <p>Pods, deployments, services, ingress, Helm charts</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🐳</div>
+          <h3>Docker</h3>
+          <p>Containerization, compose, multi-stage builds</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">⚛️</div>
+          <h3>React</h3>
+          <p>Hooks, context, component design, Tailwind CSS</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🐘</div>
+          <h3>PostgreSQL</h3>
+          <p>Schema design, indexing, complex queries</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🔧</div>
+          <h3>DevOps / CI-CD</h3>
+          <p>GitHub Actions, pipelines, cloud deployments</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="72"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects__grid">
+        <div class="project-card project-card--featured">
+          <div class="project-card__tag">Django · PostgreSQL · Docker</div>
+          <h3>Django Todo App</h3>
+          <p>A full-featured task management application with user authentication, REST API, and a clean responsive UI. Deployed via Docker Compose.</p>
+          <div class="project-card__links">
+            <a href="#" class="btn btn--sm">Live Demo</a>
+            <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card__tag">React · Node.js · MongoDB</div>
+          <h3>Reddit Clone (K8s)</h3>
+          <p>A Reddit-like platform deployed on Kubernetes with microservices architecture and horizontal auto-scaling.</p>
+          <div class="project-card__links">
+            <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card__tag">YAML · Kubernetes · Helm</div>
+          <h3>K8s Config Templates</h3>
+          <p>Production-ready Kubernetes YAML templates and Helm charts for rapid application deployment.</p>
+          <div class="project-card__links">
+            <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__card">
+        <div class="section-label">Let's Connect</div>
+        <h2>Ready to build something great?</h2>
+        <p>I'm open to freelance projects, collaborations, and full-time opportunities.</p>
+        <a href="mailto:your@email.com" class="btn btn--primary btn--lg">Send Me an Email</a>
+        <div class="contact__socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 TWS Portfolio · Built with passion</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
